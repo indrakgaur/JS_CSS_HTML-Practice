@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="mobile-menu-div" id="mobile-menu-div">
+      <div class="closeImage-div">
+      <img src="assets/images/icon-menu-close.svg" class="closeImage" id="close-btn" />
+      </div>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>New</a></li>
+        <li><a>Popular</a></li>
+        <li><a>Trending</a></li>
+        <li><a>Categories</a></li>
+      </ul>
+    </div>
+    <div class="layout">
+      <div class="nav-div">
+        <img src="assets/images/logo.svg" />
+        <nav class="nav-mobile">
+          <img src="assets/images/icon-menu.svg" id="hamburger-btn" />
+        </nav>
+        <nav class="nav-bar-class">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>New</a></li>
+            <li><a>Popular</a></li>
+            <li><a>Trending</a></li>
+            <li><a>Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="body-div">
+        <div class="left-div">
+        <div class="body-image-div">
+          <img src="./assets/images/image-web-3-desktop.jpg" width="100%" height="90%">
+        </div>
+        <div class="content-div">
+          <div class="left-content-div">
+            <p class="left-para">The Bright Future of Web 3.0?</p>
+          </div>
+          <div class="right-content-div">
+            <p class="right-para">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button class="read-btn">READ MORE</button>
+          </div>
+        </div>
+        </div>
+        <div class="right-div">
+        <div class="vertical-div">
+          <p class="vertical-content-h">New</p>
+          <p class="vertical-content">
+            <a>Hydrogen VS Electric Cars</a>  </p>
+            <p class="inner-vcontent">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr>
+          <p class="vertical-content">
+            <a>The Downsides of AI Artistry</a></p>
+            <p class="inner-vcontent">What are the possible adverse effects of on-demand AI image generation?</p>
+          <hr>
+          <p class="vertical-content">
+            <a>Is VC Funding Drying Up?</a> </p>
+            <p class="inner-vcontent">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+      </div>
+      
+      <div class="bottom-div">
+        <div class="bottom-content-div">
+          <img
+            class="bottom-img"
+            width="90"
+            height="110"
+            src="./assets/images/image-retro-pcs.jpg"
+          />
+          <div class="bottom-para">
+            <p>01</p>
+            <p>
+              <a>Reviving Retro PCs</a>
+            </p>
+            <p>
+                What happens when old PCs are given modern
+                upgrades?
+            </p>
+          </div>
+          </div>
+          <div class="bottom-content-div">
+            <img
+              class="bottom-img"
+              width="90"
+              height="110"
+              src="./assets/images/image-top-laptops.jpg"
+            />
+            <div class="bottom-para">
+              <p>02</p>
+              <p>
+                <a>Top 10 Laptops of 2022</a>
+              </p>
+              <p>
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+            </div>
+            
+            <div class="bottom-content-div">
+                <img
+                  class="bottom-img"
+                  width="90"
+                  height="110"
+                  src="./assets/images/image-gaming-growth.jpg"
+                />
+                <div class="bottom-para">
+                  <p>03</p>
+                  <p>
+                    <a>The Growth of Gaming</a>
+                  </p>
+                  <p>
+                    How the pandemic has sparked fresh opportunities.
+                  </p>
+                </div>
+                </div>
+                
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("hamburger-btn").addEventListener("click", function() {
+        const element = document.getElementById('mobile-menu-div');
+        element.classList.add('mobile-menu-div-on');
+        element.classList.remove('mobile-menu-div');
+      });
+
+      document.getElementById("close-btn").addEventListener("click", function() {
+        const element = document.getElementById('mobile-menu-div');
+        element.classList.remove('mobile-menu-div-on');
+        element.classList.add('mobile-menu-div');
+      });
+    </script>
+  </body>
+</html>
