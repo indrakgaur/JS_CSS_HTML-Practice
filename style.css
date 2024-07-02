@@ -60,7 +60,7 @@
   padding-top: 25px;
   z-index: 2;
   height: calc(var(--vh, 1vh) * 100);
-  background-color: hsl(36, 100%, 99%);
+  background-color: #fff;
   animation: slideOut 0.2s ease-in forwards;
 }
 
@@ -300,7 +300,8 @@ hr {
     padding-left: 25px;
     padding-top: 25px;
     z-index: 2;
-    height: 200vh;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
     width: 80%;
     background-color: hsl(36, 100%, 99%);
     animation: slideIn 0.2s ease-in forwards;
