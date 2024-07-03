@@ -74,10 +74,10 @@
 }
 
 .mobile-menu-div ul li {
-  margin-top: 20px;
+  margin-top: 25px;
   list-style-type: none;
   font-family: "Inter";
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -86,11 +86,11 @@
 }
 
 .mobile-menu-div-on ul li {
-  margin-top: 20px;
+  margin-top: 40px;
   list-style-type: none;
   font-family: "Inter";
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 /*-----Mobile Menu End ------*/
@@ -303,7 +303,7 @@ hr {
     height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
     width: 80%;
-    background-color: hsl(36, 100%, 99%);
+    background-color: #fff;
     animation: slideIn 0.2s ease-in forwards;
   }
 
